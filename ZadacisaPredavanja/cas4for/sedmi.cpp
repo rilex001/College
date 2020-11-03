@@ -2,13 +2,14 @@
 #include<math.h>
 
 int main() {
-	int n, i;
-	double v;
+	int n, i, k;
+	double suma;
 	scanf("%d", &n);
-	for( i = 0, v = 0.0 ; i < n; i++) {
-		v = sqrt(2 + v);
+	for( i = 2, suma = 0.0 ; i < n; i++) {
+		k = i - 1;
+		suma = sqrt(k + suma);
 	}
-	printf("%.6lf\n", v);
+	printf("%.4lf\n", suma);
 	
 	return 0;
 }

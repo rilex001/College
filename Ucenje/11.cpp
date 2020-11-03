@@ -1,15 +1,14 @@
 #include<stdio.h>
-#include<math.h>
+
 int main() {
 	int n, suma;
-	suma = 0;
+	
 	scanf("%d", &n);
 	
 	for(int i = 1; i <= n; i++) {
-		suma += pow(i, 2);
+		if(n % i == 0) suma += i;
 	}
-	printf("%d", suma);
-	return 0;
+	
+	printf("Suma %d", suma);
+	
 }
-
-
